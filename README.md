@@ -6,3 +6,10 @@
 
 ```bash
 $ conda env create -f environment.yml
+```
+## Data and Preprocessing
+
+- EAE data:https://github.com/PlusLabNLP/X-Gear
+
+- SRL data:https://github.com/zzsfornlp/zmsp/
+
