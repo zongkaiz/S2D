@@ -1,0 +1,54 @@
+{
+    "dataset": "ace05",
+    "lang": "chinese",
+    "lang_test": "english",
+    "alias": "zh",
+    "alias_test": "en",
+    "gpu_device": 0,
+    "seed": 10,
+    "dev_file": "./processed_data/ace05_en_mT5/dev.json",
+    "test_file": "./processed_data/ace05_en_mT5/test.json",
+    "finetune_dir": "./finetuned_data/ace05_mT5copy_en/",
+    "train_finetune_file": "/media/h3c/users/zongkai/LAPIN/finetuned_data/ace05_mT5copy_zh/train_all_withSRL600.pkl",
+    "dev_finetune_file": "./finetuned_data/ace05_mT5copy_en/dev_all.pkl",
+    "test_finetune_file": "./finetuned_data/ace05_mT5copy_en/test_all.pkl",
+    "vocab_file": "/media/h3c/users/zongkai/LAPIN/finetuned_data/ace05_mT5copy_zh/vocab_withSRL.json",
+    "vocab_file_test": "./finetuned_data/ace05_mT5copy_en/vocab.json",
+    "output_dir": "./output/ace05_mT5copy-base_zh_en/",
+    "cache_dir": "./cache/",
+    "model_name": "copy+google/mt5-base",
+    "input_style": [
+      "triggerword",
+      "template"
+    ],
+    "output_style": [
+      "argument:roletype"
+    ],
+    "max_epoch": 100,
+    "warmup_epoch": 5,
+    "train_batch_size": 8,
+    "eval_batch_size": 12,
+    "accumulate_step": 1,
+    "learning_rate": 1e-04,
+    "weight_decay": 1e-05,
+    "grad_clipping": 5.0,
+    "beam_size": 4,
+    "max_length": 350,
+    "max_output_length": 100,
+    "prefix_tuning": {
+      "prefix_sequence_length": 30,
+      "mid_dim": 768,
+      "prefix_dropout": 0.0
+    },
+    "model": {
+      "knowledge_usage": "separate",
+      "freeze_plm": true,
+      "freeze_prefix": false,
+      "use_description": false
+    },
+    "syntax_num": 18,
+    "syntax_hidden_size": 128,
+    "num_layers": 1,
+    "past_prompt": true
+  }
+  
