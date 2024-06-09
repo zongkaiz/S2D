@@ -13,3 +13,9 @@ $ conda env create -f environment.yml
 
 - SRL data:https://github.com/zzsfornlp/zmsp/
 
+## Details：
+
+- The file “S2D” is our main model code.
+- The file “config-large” is the parameter file.
+  You can change the parameters and run train_ace_xx_xx.py (xx is replaced by language) in S2D to do the training.
+  
