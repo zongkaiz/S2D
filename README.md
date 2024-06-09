@@ -17,5 +17,7 @@ $ conda env create -f environment.yml
 
 - The file “S2D” is our main model code.
 - The file “config-large” is the parameter file.
-  You can change the parameters and run train_ace_xx_xx.py (xx is replaced by language) in S2D to do the training.
+
+## Run:
+  You can change the parameters in the file "config-large" and run train_ace_xx_xx.py (xx is replaced by language) in S2D to do the training.
   
